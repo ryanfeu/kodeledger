@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
 ul {
   list-style: none;
 }
@@ -21,6 +36,11 @@ img {
   width: 100%;
 }
 
+.blog-header {
+  font-weight: 600; /* Adjust font weight to make it bolder */
+  font-size: 3rem; /* Adjust font size to make it larger */
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -34,6 +54,10 @@ img {
   position: fixed;
   top: 0px;
   padding: 0 30px;
+  transition: 0.5;
+}
+.navbar.top {
+  background: transparent;
 }
 
 .navbar a {
@@ -55,9 +79,8 @@ img {
 }
 
 /* Header */
-
 .hero {
-  background: url('../images/home/showcase.jpg');
+  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #fff;
@@ -78,9 +101,24 @@ img {
 }
 
 .hero .content p {
-  font-size: 23px;
+  font-size: 23;
   max-width: 600px;
   margin: 20px 0 30px;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 .hero::before {
@@ -90,15 +128,14 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero * {
-  z-index: 1;
+  z-index: 5;
 }
 
-/* Icons */
-
+/* icons */
 .icons {
   padding: 30px;
 }
@@ -116,6 +153,7 @@ img {
   margin-bottom: 15px;
 }
 
+/* Cases */
 .cases img:hover {
   opacity: 0.7;
 }
@@ -135,11 +173,16 @@ img {
   margin: 20px;
 }
 
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
 .team img {
   border-radius: 50%;
 }
 
 /* Callback Form */
+
 .callback-form {
   width: 100%;
   padding: 20px 0;
@@ -147,19 +190,18 @@ img {
 
 .callback-form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
-.callback-form,
-.form-control {
+.callback-form .form-control {
   margin-bottom: 15px;
 }
 
 .callback-form input {
   width: 100%;
-  padding: 5px;
+  padding: 4px;
   height: 40px;
-  border: #f5f5f5 1 px solid;
+  border: #f5f5f5 1px solid;
 }
 
 .callback-form .btn {
@@ -171,13 +213,42 @@ img {
   outline-color: #28a745;
 }
 
+.hero.blog {
+  background: url(../images/home/blog.jpg) no-repeat center center/cover;
+  height: 30vh;
+}
+
+/* Post */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  margin-bottom: 30px;
+}
+
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 150px;
+  height: 200px;
 }
 
 footer a {
@@ -185,7 +256,8 @@ footer a {
 }
 
 .footer .social > * {
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .footer a:hover {

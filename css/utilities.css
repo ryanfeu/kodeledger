@@ -1,40 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&display=swap');
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: #fff;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Text Color */
+/* Text color */
 .text-primary {
   color: #28a745;
 }
 
 .text-secondary {
   color: #0284d0;
-}
-
-/* Button */
-.btn {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  background-color: #28a745;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  opacity: 0.9;
 }
 
 .btn-primary,
@@ -61,7 +31,7 @@ body {
   color: #333;
 }
 
-/* Flex items */
+/* Flex Items */
 .flex-items {
   display: flex;
   text-align: center;
@@ -78,7 +48,6 @@ body {
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
 }
-
 .flex-columns .row {
   display: flex;
   flex-direction: row;
@@ -107,7 +76,7 @@ body {
 .flex-columns .column-2 {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   padding: 30px;
 }
@@ -141,8 +110,4 @@ body {
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
-}
-
-.section-padding {
-  padding: 20px 20px 40px;
 }

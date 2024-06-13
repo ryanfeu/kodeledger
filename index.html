@@ -8,26 +8,28 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
-      href="./css/utilities.css"
+      href="./css/lightbox.min.css"
     />
     <link
       rel="stylesheet"
       href="./css/style.css"
     />
-    <title>KodeLedger</title>
+    <link
+      rel="stylesheet"
+      href="./css/utilities.css"
+    />
+    <title>Welcome to KodeLedger</title>
   </head>
   <body id="home">
+    <!-- Navbar and hero section -->
     <header class="hero">
       <div
         id="navbar"
-        class="navbar"
+        class="navbar top"
       >
         <h1 class="logo">
           <span class="text-primary"><i class="fas fa-book-open"></i>Kode</span
@@ -36,16 +38,15 @@
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">Marche</a></li>
-            <li><a href="#cases">Rodwell</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cases">Cases</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
-
       <div class="content">
-        <h1>Thy Sky Is The Limit</h1>
+        <h1>The sky is the limit WD86</h1>
         <p>We provide world class financial assistance</p>
         <a
           href="#about"
@@ -54,7 +55,6 @@
         >
       </div>
     </header>
-
     <main>
       <!-- Icons -->
       <section
@@ -66,7 +66,10 @@
             <i class="fas fa-university fa-2x"></i>
             <div>
               <h3>Investment Banking</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                sit.
+              </p>
             </div>
           </div>
 
@@ -74,7 +77,10 @@
             <i class="fas fa-book-reader fa-2x"></i>
             <div>
               <h3>Portfolio Manager</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                sit.
+              </p>
             </div>
           </div>
 
@@ -82,11 +88,15 @@
             <i class="fas fa-pencil-alt fa-2x"></i>
             <div>
               <h3>Tax & Custodial</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                sit.
+              </p>
             </div>
           </div>
         </div>
       </section>
+
       <!-- Solutions -->
       <section class="solutions flex-columns">
         <div class="row">
@@ -94,7 +104,7 @@
             <div class="column-1">
               <img
                 src="./images/home/people.jpg"
-                alt="people"
+                alt="People"
               />
             </div>
           </div>
@@ -103,21 +113,21 @@
               <h4>What are you looking for</h4>
               <h2>We provide bespoke solutions</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum quidem quos consequatur voluptate beatae commodi, esse
-                officiis. Rem, doloremque quae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                cumque blanditiis minima incidunt veritatis omnis totam
+                voluptatem temporibus. Non, quis?
               </p>
               <a
                 href="#"
                 class="btn btn-outline"
+                ><i class="fas fa-chevron-right"></i> Read More</a
               >
-                <i class="fas fa-chevron-right"></i> Read More
-              </a>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- Cases -->
       <section
         id="cases"
         class="cases flex-grid section-padding"
@@ -126,50 +136,99 @@
           <h4>This is what we do</h4>
           <h2>Business Cases</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-            recusandae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            necessitatibus!
           </p>
         </header>
         <div class="row">
           <div class="column">
-            <img
-              src="./images/cases/cases1.jpg"
-              alt=""
-            />
-            <img
-              src="./images/cases/cases2.jpg"
-              alt=""
-            />
+            <a
+              href="./images/cases/cases1.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases1.jpg"
+                alt="Case1"
+            /></a>
+            <a
+              href="./images/cases/cases2.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+              ><img
+                src="./images/cases/cases2.jpg"
+                alt="Case2"
+              />
+            </a>
           </div>
           <div class="column">
-            <img
-              src="./images/cases/cases3.jpg"
-              alt=""
-            />
-            <img
-              src="./images/cases/cases4.jpg"
-              alt=""
-            />
+            <a
+              href="./images/cases/cases3.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+              ><img
+                src="./images/cases/cases3.jpg"
+                alt="Case3"
+              />
+            </a>
+            <a
+              href="./images/cases/cases4.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases4.jpg"
+                alt="Case4"
+            /></a>
           </div>
           <div class="column">
-            <img
-              src="./images/cases/cases5.jpg"
-              alt=""
-            />
-            <img
-              src="./images/cases/cases6.jpg"
-              alt=""
-            />
+            <a
+              href="./images/cases/cases5.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases5.jpg"
+                alt="Case5"
+              />
+            </a>
+            <a
+              href="./images/cases/cases6.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases6.jpg"
+                alt="Case6"
+            /></a>
           </div>
           <div class="column">
-            <img
-              src="./images/cases/cases7.jpg"
-              alt=""
-            />
-            <img
-              src="./images/cases/cases2.jpg"
-              alt=""
-            />
+            <a
+              href="./images/cases/cases1.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases7.jpg"
+                alt="Case7"
+            /></a>
+            <a
+              href="./images/cases/cases3.jpg"
+              data-lightbox="cases"
+              data-title="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, sequi!
+            "
+            >
+              <img
+                src="./images/cases/cases3.jpg"
+                alt="Case3"
+            /></a>
           </div>
         </div>
       </section>
@@ -184,25 +243,24 @@
             <div class="column-1">
               <img
                 src="./images/home/blog.jpg"
-                alt="blog"
+                alt="Blog"
               />
             </div>
           </div>
           <div class="column">
-            <div class="column-2 bg-primary bg-secondary">
-              <h4>June 7, 2024</h4>
+            <div class="column-2 bg-secondary">
+              <h4>February 14, 2023</h4>
               <h2>Blog Post One</h2>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Dolorum quidem quos consequatur voluptate beatae commodi, esse
-                officiis. Rem, doloremque quae.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                cumque blanditiis minima incidunt veritatis omnis totam
+                voluptatem temporibus. Non, quis?
               </p>
               <a
                 href="blog.html"
                 class="btn btn-outline"
+                ><i class="fas fa-chevron-right"></i> Read Our Blog</a
               >
-                <i class="fas fa-chevron-right"></i> Read Our Blog
-              </a>
             </div>
           </div>
         </div>
@@ -215,18 +273,17 @@
       >
         <header class="section-header">
           <h4>Who we Are</h4>
-          <h2>Our Professional Team</h2>
+          <h2>Our Professional team</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
-            voluptatum!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
+            est.
           </p>
         </header>
-
         <div class="flex-items">
           <div>
             <img
               src="./images/team/person1.jpg"
-              alt=""
+              alt="Alden Rye"
             />
             <h4>Alden Rye</h4>
             <p>President</p>
@@ -234,18 +291,18 @@
           <div>
             <img
               src="./images/team/person2.jpg"
-              alt=""
+              alt="Catrice"
             />
-            <h4>Catrice</h4>
-            <p>COO</p>
+            <h4>Catrice Dominique</h4>
+            <p>Vice-President for Operations</p>
           </div>
           <div>
             <img
               src="./images/team/person3.jpg"
-              alt=""
+              alt="Benjamin Cruz"
             />
-            <h4>Benjie</h4>
-            <p>CTO</p>
+            <h4>Benjamin Cruz</h4>
+            <p>Vice-President for Marketing</p>
           </div>
         </div>
       </section>
@@ -259,8 +316,8 @@
           <div class="column">
             <div class="column-1">
               <img
-                src="./images/home/contact.jpg"
-                alt=""
+                src="./images//home/contact.jpg"
+                alt="Contact Us"
               />
             </div>
           </div>
@@ -280,25 +337,26 @@
                     placeholder="Enter name"
                   />
                 </div>
+
                 <div class="form-control">
                   <label for="email"></label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    placeholder="Enter Email"
+                    placeholder="Enter email"
                   />
                 </div>
+
                 <div class="form-control">
                   <label for="phone"></label>
                   <input
                     type="text"
                     name="phone"
                     id="phone"
-                    placeholder="Enter phone number"
+                    placeholder="Enter phone"
                   />
                 </div>
-
                 <input
                   type="submit"
                   value="Send"
@@ -312,6 +370,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer bg-dark">
       <div class="social">
         <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
@@ -319,7 +378,52 @@
         <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
         <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
       </div>
-      <p>Copyright &copy; 2024 - KodeLedger</p>
+      <p>Copyright &copy; 2023 - KodeLedger</p>
     </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/lightbox.min.js"></script>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+
+      //Smooth Scrolling
+      $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script>
   </body>
 </html>
